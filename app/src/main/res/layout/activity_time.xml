@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/templ2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/button_1_d"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/templ2"
+                    android:text="1 DAY BEFORE"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/button_2_d"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/templ2"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="2 DAY BEFORE"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_1_d" />
+
+                <TextView
+                    android:id="@+id/button_1_w"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/templ2"
+                    android:text="1 WEEK BEFORE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_2_d"
+                    />
+
+                <TextView
+                    android:id="@+id/button_15_d"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/templ2"
+                    android:text="15 DAYS BEFORE"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_1_w"
+                    />
+
+
+                <TextView
+                    android:id="@+id/button_1_m"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="1 MONTH BEFORE"
+                    android:textColor="@color/white"
+                    android:background="@drawable/templ2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_15_d"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/RG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/button_1_day"
+                        android:layout_width="wrap_content"
+                        android:backgroundTint="@color/design_default_color_secondary_variant"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="11sp"
+                        app:layout_constraintTop_toTopOf="parent"/>
+<!--                        android:button="@drawable/square_radio_button"/>-->
+
+
+                    <RadioButton
+                        android:id="@+id/button_2_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/design_default_color_secondary_variant"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_1_day"/>
+<!--                        android:button="@drawable/square_radio_button"/>-->
+
+                    <RadioButton
+                        android:id="@+id/button_1_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/design_default_color_secondary_variant"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.503"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_2_day"/>
+<!--                        android:button="@drawable/square_radio_button"/>-->
+
+                    <RadioButton
+                        android:id="@+id/button_15_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/design_default_color_secondary_variant"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_1_week"/>
+<!--                        android:button="@drawable/square_radio_button"/>-->
+
+                    <RadioButton
+                        android:id="@+id/button_1_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/design_default_color_secondary_variant"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_15_days"/>
+<!--                        android:button="@drawable/square_radio_button"/>-->
+
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/pickTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/design_default_color_secondary_variant"
+                android:text="Pick Time"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.413" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/templ2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
